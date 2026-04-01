@@ -1,0 +1,44 @@
+{
+  "name": "mentonex-backend",
+  "version": "1.0.0",
+  "description": "Node.js backend for Mentonex AI assistant",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --config nodemon.json src/server.js",
+    "start": "NODE_ENV=production node src/server.js",
+    "build": "echo 'No build step needed for Node.js'",
+    "test": "node --test",
+    "lint": "eslint src/",
+    "clean": "rm -rf node_modules package-lock.json && npm install"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.81.0",
+    "cors": "^2.8.5",
+    "discord.js": "^14.26.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "mongoose": "^9.3.3",
+    "morgan": "^1.10.0",
+    "openai": "^6.33.0",
+    "telegraf": "^4.16.3",
+    "twilio": "^5.13.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "ai",
+    "assistant",
+    "backend",
+    "api",
+    "mentonex"
+  ],
+  "author": "Mentonex Team",
+  "license": "MIT"
+}
